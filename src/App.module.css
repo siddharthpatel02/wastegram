@@ -1,0 +1,27 @@
+.logo{
+margin-left: 24%;
+height: 60px;
+width: 175px;
+margin-top: 15%;
+margin-bottom: 1.5rem;
+}
+.input{
+  height: 2rem;
+  width: 17rem;
+  margin-left: 2rem;
+  margin-bottom: 0.4rem;
+  background-color: #FAFAFA;
+  border: groove;
+}
+.or{
+  text-align: center;
+}
+.signup{
+  text-align: center;
+}
+.link{
+text-decoration: none;
+color: #0095F6;
+}
+
+
