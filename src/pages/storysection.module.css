@@ -1,0 +1,10 @@
+.box {
+  background-color: rgb(21, 21, 21);
+  height: 7rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.example::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,11 @@
+.stack{
+padding-top: 1rem;
+margin-left: 1rem;
+   
+}
+.profilename{
+    margin-top: 0.50rem;
+    margin-left: 0.80rem;
+    color: white;
+    font: 10px Arial, sans-serif;
+}

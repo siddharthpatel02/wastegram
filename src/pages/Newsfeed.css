@@ -13,7 +13,7 @@
 
 .Post_feed img {
     height: 45rem;
-    width: 49rem;
+    width: 30rem;
     object-fit: cover;
     position: relative;
     right: 0.7rem;
@@ -24,6 +24,8 @@
     align-items: center;
     gap: 1rem;
     padding: 0.5rem;
+    position: relative;
+    right: 1.1rem;
 }
 
 .user-profile img {
@@ -41,21 +43,21 @@
     margin: 10px;
     position: relative;
     bottom: 1.5rem;
-    right: 0.8rem;
+    right: 1.8rem;
 }
 
 .comment {
     margin: 10px;
     position: relative;
     bottom: 1.5rem;
-    right: 0.8rem;
+    right: 2.8rem;
 }
 
 .send {
     margin: 10px;
     position: relative;
     bottom: 1.5rem;
-    right: 0.8rem;
+    right: 3.8rem;
 }
 
 .caption_para {
@@ -72,4 +74,9 @@
     position: relative;
     bottom: 0.7rem;
     left: 0.8rem;
+    font-size: 1.1rem;
+}
+.button{
+    position: relative;
+    right: 1.1rem;
 }
