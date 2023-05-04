@@ -1,0 +1,5 @@
+;/*FB_PKG_DELIM*/
+
+__d("PolarisChainedPostsRootQuery$Parameters",[],(function(a,b,c,d,e,f){"use strict";a={kind:"PreloadableConcreteRequest",params:{id:"5934086660035237",metadata:{},name:"PolarisChainedPostsRootQuery",operationKind:"query",text:null}};e.exports=a}),null);
+__d("PolarisMobilePostRoot.entrypoint",["JSResourceForInteraction","PolarisChainedPostsRootQuery$Parameters","PolarisPostRootQuery$Parameters","qex"],(function(a,b,c,d,e,f,g){"use strict";a={getPreloadProps:function(a){var b=a.routeParams;a=a.routeProps;var d={options:{},parameters:c("PolarisPostRootQuery$Parameters"),variables:{shortcode:b.shortcode}};return b.chaining===!0||c("qex")._("591")===!0?{queries:{polarisPostRootQuery:d,polarisPostChainingRootQuery:{options:{},parameters:c("PolarisChainedPostsRootQuery$Parameters"),variables:{data:{media_id:a.media_id}}}}}:{queries:{polarisPostRootQuery:d}}},root:c("JSResourceForInteraction")("PolarisMobilePostRoot.react").__setRef("PolarisMobilePostRoot.entrypoint")};g["default"]=a}),98);
+__d("AccountDetailsDialogQuery_instagramRelayOperation",[],(function(a,b,c,d,e,f){e.exports="5243091455727826"}),null);
