@@ -3,6 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 
 import CompanyName from "../assets/instawhite.png";
+import styles from './navbar.module.css'
 
 
 
@@ -10,10 +11,10 @@ import CompanyName from "../assets/instawhite.png";
 const Navbar = () => {
   return (
     
-    <AppBar position='static' sx={{backgroundColor:'black',p:0,m:0}}>
+    <AppBar sx={{backgroundColor:'black',p:0,m:0}}>
         <Toolbar>
-        <img
-        style={{backgroundColor:'white',marginLeft:'7rem'}}
+        <img className={styles.logo}
+        style={{marginLeft:'1rem',paddingTop:'1.5rem'}}
             src={CompanyName}
             alt="logo"
             height={30}

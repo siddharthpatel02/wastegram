@@ -10,7 +10,7 @@ import './Newsfeed.css'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import MapsUgcIcon from '@mui/icons-material/MapsUgc';
 import SendIcon from '@mui/icons-material/Send';
-import image6 from '../assets/tower.jpg'
+import image6 from '../assets/udit.jpeg'
 
 const memberList = [
     {
@@ -53,17 +53,16 @@ const memberList = [
 ]
 const Newsfeed = () => {
     return (
-        
-        <Container sx={{ position: 'center' }}>
-            <Grid container justifyContent="center" alignItems="center">
-                <Grid item xs={12} md={8} >
-                  {memberList.map((user, i) => {
+        <div className='container'>
+          <div className='Content_box'>
+                <Grid item xs={12} md={8} ls={4} >
+                  {memberList.map((user) => {
                     return  <Box >
                     <Box className="user-profile">
                         <Avatar alt="user logo" src={user.img} />
                         <h2>{user.name}</h2>
                     </Box>
-                    <Box sx={{ width: 100 }} className="Post_feed">
+                    <Box sx={{ width: 20 }} className="Post_feed">
                         <img src={user.img} alt="image" />
                     </Box>
                     <Box >
@@ -73,16 +72,19 @@ const Newsfeed = () => {
                         <Button>   <SendIcon className='send' /></Button> 
                         </div>
                     </Box>
+                    <div className='content_type'>
                     <h2 className='count_like'>1000 likes</h2>
                     <h3 className='caption'> {user.name} <p className='caption_para'>{user.caption}</p></h3>
                     <div className='button'><Button variant="text">View Comments</Button></div>
                    <div  className='button'> <Button variant="text">Add Comments</Button></div>
+                   </div>
 
                 </Box>
                  })}
                  </Grid>
-            </Grid>
-        </Container>
+                 </div>
+                                  </div>
+
     
     )
 };
