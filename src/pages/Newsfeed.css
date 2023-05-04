@@ -1,0 +1,82 @@
+
+.Post_feed {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 1.5rem;
+}
+
+.Post_feed h4 {
+    background: #fafafa;
+    padding: 0.5rem;
+}
+
+.Post_feed img {
+    height: 45rem;
+    width: 30rem;
+    object-fit: cover;
+    position: relative;
+    right: 0.7rem;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    position: relative;
+    right: 1.1rem;
+}
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user-profile h2 {
+    margin: 0;
+}
+
+
+.like {
+    margin: 10px;
+    position: relative;
+    bottom: 1.5rem;
+    right: 1.8rem;
+}
+
+.comment {
+    margin: 10px;
+    position: relative;
+    bottom: 1.5rem;
+    right: 2.8rem;
+}
+
+.send {
+    margin: 10px;
+    position: relative;
+    bottom: 1.5rem;
+    right: 3.8rem;
+}
+
+.caption_para {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    color: purple
+}
+
+.count_like{
+    margin: -1.5rem;
+    padding: 0.5rem;
+    position: relative;
+    bottom: 0.7rem;
+    left: 0.8rem;
+    font-size: 1.1rem;
+}
+.button{
+    position: relative;
+    right: 1.1rem;
+}
