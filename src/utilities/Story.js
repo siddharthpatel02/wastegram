@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './story.module.css'
 import Avatar from '@mui/material/Avatar';
-import avatarimg from '../assets/sid.jpeg'
 
 
 const Story = (props) => {
