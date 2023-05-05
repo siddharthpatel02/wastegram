@@ -1,5 +1,5 @@
 import { Box, Container } from '@mui/system'
-import { Grid } from '@mui/material';
+import { Grid, List, ListItem } from '@mui/material';
 import { Avatar, Button } from '@mui/material';
 import image from '../assets/akash.jpg'
 import image2 from '../assets/siddharth.jpg'
@@ -62,7 +62,7 @@ const Newsfeed = () => {
                         <Avatar alt="user logo" src={user.img} />
                         <h2>{user.name}</h2>
                     </Box>
-                    <Box sx={{ width: 20 }} className="Post_feed">
+                    <Box sx={{ width: 0 }} className="Post_feed">
                         <img src={user.img} alt="image" />
                     </Box>
                     <Box >
@@ -76,6 +76,7 @@ const Newsfeed = () => {
                     <h2 className='count_like'>1000 likes</h2>
                     <h3 className='caption'> {user.name} <p className='caption_para'>{user.caption}</p></h3>
                     <div className='button'><Button variant="text">View Comments</Button></div>
+                  
                    <div  className='button'> <Button variant="text">Add Comments</Button></div>
                    </div>
 

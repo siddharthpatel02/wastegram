@@ -4,6 +4,8 @@ import Toolbar from '@mui/material/Toolbar';
 
 import CompanyName from "../assets/instawhite.png";
 import styles from './navbar.module.css'
+import { Container } from '@mui/material';
+import { AppBlocking } from '@mui/icons-material';
 
 
 
@@ -11,7 +13,7 @@ import styles from './navbar.module.css'
 const Navbar = () => {
   return (
     
-    <AppBar sx={{backgroundColor:'black',p:0,m:0}}>
+    <AppBar position='static'  sx={{backgroundColor:'black',p:0,m:0}}>
         <Toolbar>
         <img className={styles.logo}
         style={{marginLeft:'1rem',paddingTop:'1.5rem'}}
