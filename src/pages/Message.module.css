@@ -1,0 +1,22 @@
+.button_user{
+
+    display: flex;
+    align-items: center;
+    gap :5rem;
+    color: #fff;
+}
+.user_message{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    /* position: relative; */
+    /* bottom:30px; */
+    padding-top:0;
+    height: 5rem;
+}
+.para{
+    position: relative;
+    bottom:1.3rem;
+    font-size: 17px;
+}
