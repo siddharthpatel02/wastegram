@@ -2,8 +2,9 @@
 
     display: flex;
     align-items: center;
-    gap :5rem;
+    gap:5rem;
     color: #fff;
+    position: static;
 }
 .user_message{
     display: flex;
@@ -20,3 +21,9 @@
     bottom:1.3rem;
     font-size: 17px;
 }
+
+
+/* @media (min-width:501px) and (max-width: 1500px) {
+    .user_message{margin-left: 35%;}} 
+    @media (min-width:501px) and (max-width: 1500px) {
+        h3{margin-left: 35%;}}  */

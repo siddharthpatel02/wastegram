@@ -1,0 +1,48 @@
+.button_user{
+
+    display: flex;
+    align-items: center;
+   
+    color: #fff;
+    position: static;
+    margin-left: -1.5rem;
+}
+.message_logo{
+    display: flex;
+    align-items: center;
+   gap: 1rem;
+    color: #fff;
+    padding-top: 3.5rem;
+}
+.sender_message{
+    /* border: 2px dotted grey;
+    border-radius: 2rem; */
+    margin-top: 1rem;
+    
+}
+    .reciever_message{
+      
+        text-align: justify;  /* For Edge */
+        text-align-last: right;
+        margin-right: 1.5rem;
+        margin-top: 1rem;
+        
+    }
+    .box{
+        height: 7rem;
+        margin-top: 1rem;
+    }
+    .input{
+        border-radius: 2rem; 
+        background-color:black ;
+        color: white;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid grey;
+        box-sizing: border-box;
+    }
+  .avatar{
+    margin-right: 0.5rem;
+  }

@@ -81,13 +81,43 @@ const Messages=[
               img: image6,
               message:'If you want the opportunity to knock, it’s time to build a door'
             },
+              {
+              id: 2,
+              name: 'Siddharth Patel',
+              img: image2,
+              message:'If you want the opportunity to knock, it’s time to build a door'
+            },
+            {
+              id: 3,
+              name: 'Anoop Sharma',
+              img: image3,
+              message:'If you don’t believe in yourself,who will?'
+            },
+             {
+              id: 4,
+              name: 'Rajan Sharma',
+              img: image4,
+              message:'It always seems impossible until it’s done'
+            },
+            {
+              id: 5,
+              name: 'Madhav sharma',
+              img: image5,
+              message:'The little things in life matter'
+            },
+            {
+              id: 6,
+              name: 'Udit Tiwari',
+              img: image6,
+              message:'If you want the opportunity to knock, it’s time to build a door'
+            },
         
 ]
 
 const Message = () => {
   return (
   <Box>
-    <Box sx={{backgroundColor:'black',color :'white'}}>
+    <Box  classname={styles.box} sx={{backgroundColor:'black',color :'white'}}>
         <div className={styles.button_user}>
         <Button> <ArrowBackIosNewIcon /></Button>
         <h3 className='username'>_m_a.d_h.a_v</h3>
