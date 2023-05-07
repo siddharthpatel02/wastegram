@@ -10,10 +10,6 @@ import Profilepage from './pages/Profilepage';
 
 function App() {
   return <div >  
-    <Navbar></Navbar>
-    {/* {<Storysection></Storysection>
-    <Newsfeed></Newsfeed> */}
-<Profilepage></Profilepage> 
   
 
   </div>

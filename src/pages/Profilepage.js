@@ -8,7 +8,7 @@ import image4 from '../assets/rajan.jpg'
 import image5 from '../assets/madhav.jpg'
 import image6 from '../assets/udit.jpeg'
 
-
+    
 const Profilepage = () => {
   const itemData = [
     {
