@@ -4,6 +4,9 @@ import LoginButton from "../utilities/LoginButton";
 import styles from "./signUp.module.css";
 import CompanyName from "../assets/Instagram.png";
 import { Link } from "react-router-dom";
+import signUp from "../ApiHandler/SignUpApi";
+import axios from 'axios';
+
 
 const SignUp = () => {
   const [mobileEmail, setMobileEmail] = useState("");
@@ -37,6 +40,7 @@ const SignUp = () => {
       setUsername("");
       setPassword("");
       console.log(form);
+        signUp(form)     
     }
   };
 
