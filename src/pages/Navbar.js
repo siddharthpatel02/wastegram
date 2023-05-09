@@ -12,20 +12,21 @@ import { AppBlocking } from '@mui/icons-material';
 
 const Navbar = () => {
   return (
-    
-    <AppBar position='static'  sx={{backgroundColor:'black',p:0,m:0}}>
-        <Toolbar>
-        <img className={styles.logo}
+    <AppBar position="fixed" sx={{backgroundColor:'black',p:0,m:0}}>
+    <Toolbar>
+    <img className={styles.logo}
         style={{marginLeft:'1rem',paddingTop:'1.5rem'}}
             src={CompanyName}
             alt="logo"
             height={30}
             width={120}
           />
-         
-          
-        </Toolbar>
-    </AppBar>
+    </Toolbar>
+</AppBar>
+
+
+    
+   
 )}
 
 export default Navbar

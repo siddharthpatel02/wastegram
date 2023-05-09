@@ -1,0 +1,33 @@
+.button_user{
+
+    display: flex;
+    align-items: center;
+    gap:5rem;
+    color: #fff;
+    position: static;
+}
+.user_message{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    /* position: relative; */
+    /* bottom:30px; */
+    padding-top:0;
+    height: 5rem;
+}
+.para{
+    position: relative;
+    bottom:1.3rem;
+    font-size: 17px;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* @media (min-width:501px) and (max-width: 1500px) {
+    .user_message{margin-left: 35%;}} 
+    @media (min-width:501px) and (max-width: 1500px) {
+        h3{margin-left: 35%;}}  */

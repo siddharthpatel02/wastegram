@@ -2,8 +2,40 @@ import Container from "@mui/material/Container";
 import CompanyName from "../assets/Instagram.png";
 import styles from "./signIn.module.css";
 import LoginButton from "../utilities/LoginButton";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function SignIn() {
+  const [userName, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [userNameValidation, setUsernameValidation] = useState(false);
+  const [passwordValidation, setpasswordValidation] = useState(false);
+  const submitHandler = (e) => {
+    e.preventDefault();
+
+    const details = {
+      userName: userName,
+      password: password,
+    };
+    if (userNameValidation || passwordValidation) {
+      console.log("details not valid");
+      return;
+    } else {
+      console.log(details);
+      setUsername("")
+      setPassword("")
+
+    }
+  };
+
+
+  useEffect(()=>{
+    // after api calling
+    console.log("token")
+    // if tocken already there route to homepae
+    
+  },[])
+
   return (
     <div>
       <Container
@@ -25,14 +57,28 @@ function SignIn() {
             width={200}
           />
         </div>
-        <form>
+        <form onSubmit={submitHandler}>
           <input
+            style={{ borderColor: userNameValidation ? "red" : "#ced4da" }}
+            onChange={(e) => {
+              setUsername(e.target.value);
+              setUsernameValidation(e.target.value.length < 8);
+            }}
+            value={userName}
+
             className={styles.input}
             type="text"
             placeholder=" Phone number,username or email address"
           />
           <br />
           <input
+            style={{ borderColor: passwordValidation ? "red" : "#ced4da" }}
+            onChange={(e) => {
+              setPassword(e.target.value);
+              setpasswordValidation(e.target.value.length < 8);
+            }}
+            value={password}
+
             className={styles.input}
             type="password"
             placeholder=" Password"
@@ -44,9 +90,12 @@ function SignIn() {
         <p className={styles.or}>OR</p>
         <p className={styles.signup}>
           Don't have an account?
-          <a className={styles.link} href="signup">
-            Sign Up
-          </a>
+          <Link className={styles.link} to={"/signup"}>
+            {" "}
+            <span className={styles.link} href="signup">
+              Sign Up
+            </span>
+          </Link>
         </p>
       </Container>
     </div>
