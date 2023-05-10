@@ -16,12 +16,12 @@ import Personal_message from './pages/Personal_message';
 
 
 function App() {
-  return(<>
+  return (<>
     <Navbar />
     <Storysection />
     <Newsfeed />
-  {/* <Message /> */}
-  {/* <Personal_message /> */}
+    {/* <Message /> */}
+    {/* <Personal_message /> */}
   </>
   )
 }
