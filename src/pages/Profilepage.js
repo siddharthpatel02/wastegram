@@ -1,22 +1,29 @@
 import { Avatar, ImageList, ImageListItem } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import image from "../assets/akash.jpg";
 import styles from "./profilepage.module.css";
-import image2 from '../assets/siddharth.jpg'
-import image3 from '../assets/anoop.jpg'
-import image4 from '../assets/rajan.jpg'
-import image5 from '../assets/madhav.jpg'
-import image6 from '../assets/udit.jpeg'
-
+import image2 from "../assets/siddharth.jpg";
+import image3 from "../assets/anoop.jpg";
+import image4 from "../assets/rajan.jpg";
+import image5 from "../assets/madhav.jpg";
+import image6 from "../assets/udit.jpeg";
 
 const Profilepage = () => {
+  const [data, setData] = useState("");
+
+  useEffect(() => {
+    // after api calling
+    setData("api");
+    console.log("data");
+    // using map method to render profile pictures
+  });
   const itemData = [
     {
       img: image,
       title: "Breakfast",
     },
     {
-      img:image2,
+      img: image2,
       title: "Burger",
     },
     {
@@ -59,6 +66,30 @@ const Profilepage = () => {
       img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
       title: "Bike",
     },
+    {
+      img: image,
+      title: "Breakfast",
+    },
+    {
+      img: image2,
+      title: "Burger",
+    },
+    {
+      img: image3,
+      title: "Camera",
+    },
+    {
+      img: image4,
+      title: "Coffee",
+    },
+    {
+      img: image,
+      title: "Breakfast",
+    },
+    {
+      img: image3,
+      title: "Camera",
+    },
   ];
   return (
     <div className={styles.main}>
@@ -76,7 +107,11 @@ const Profilepage = () => {
           <div className={styles.details}>
             <h2 className={styles.username}>Akash Malviya</h2>
             <div className={styles.status}>
-              <h6>Akaash Malviya 99% coffee😉</h6>
+              <h6>
+                Life is a journey,
+                 Not a Destination! My attitude is based on
+                how you treat me. You know my name not my story.
+              </h6>
             </div>
             <h6 className={styles.userdetails}>10 posts &nbsp;</h6>
             <h6 className={styles.userdetails}>10 followers &nbsp;</h6>

@@ -21,6 +21,10 @@
     bottom:1.3rem;
     font-size: 17px;
 }
+.link{
+    text-decoration: none;
+    color: white;
+}
 
 
 /* @media (min-width:501px) and (max-width: 1500px) {

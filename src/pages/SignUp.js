@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import LoginButton from "../utilities/LoginButton";
 import styles from "./signUp.module.css";
 import CompanyName from "../assets/Instagram.png";
+import { Link } from "react-router-dom";
+import signUp from "../ApiHandler/SignUpApi";
+import axios from 'axios';
+
 
 const SignUp = () => {
   const [mobileEmail, setMobileEmail] = useState("");
@@ -36,6 +40,7 @@ const SignUp = () => {
       setUsername("");
       setPassword("");
       console.log(form);
+        signUp(form)     
     }
   };
 
@@ -119,11 +124,10 @@ const SignUp = () => {
           </LoginButton>
         </form>
         <p className={styles.signup}>
-          Have an account
-          <a className={styles.link} href="login">
-            {" "}
-            Log in
-          </a>
+          Have an account?
+          <Link to={"/"} className={styles.link}>
+            <span > Log in</span>
+          </Link>
         </p>
       </Container>
     </div>
