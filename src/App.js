@@ -14,16 +14,7 @@ import Profile from "./pages/Routes/Profile";
 import Messanger from "./pages/Routes/Messanger";
 
 function App() {
-<<<<<<< HEAD
-  return (<>
-    <Navbar />
-    <Storysection />
-    <Newsfeed />
-    {/* <Message /> */}
-    {/* <Personal_message /> */}
-  </>
-  )
-=======
+
   return (
     <>
       <Routes>
@@ -37,7 +28,7 @@ function App() {
       </Routes>
     </>
   );
->>>>>>> b400098aadec1586eb30987a0f88b2e29b64b05a
+
 }
 
 export default App;

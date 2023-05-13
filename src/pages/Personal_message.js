@@ -110,12 +110,12 @@ const Personal_Message = () => {
               py: 0,
               gridTemplateColumns: "90% 10%",
               display: "grid",
-              gridGap:0,
+              gridGap: 0,
               alignItems: "center",
             }}
           >
             <Textarea name="Solid" placeholder="Type in here…" variant="solid" />
-            <Button sx={{ml:4,width:10}}> Send</Button>
+            <Button sx={{ ml: 4, width: 10 }}> Send</Button>
           </Box>
         </Toolbar>
       </AppBar>
