@@ -4,24 +4,29 @@ import styles from "./signIn.module.css";
 import LoginButton from "../utilities/LoginButton";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-
+import axios from "axios";
 function SignIn() {
   const [userName, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [userNameValidation, setUsernameValidation] = useState(false);
   const [passwordValidation, setpasswordValidation] = useState(false);
+  const [details, setDetails] = useState({ userName: "", password: "" });
+
   const submitHandler = (e) => {
     e.preventDefault();
 
     const details = {
       userName: userName,
       password: password,
+
     };
+    setDetails(details);
+
     if (userNameValidation || passwordValidation) {
       console.log("details not valid");
       return;
     } else {
-      console.log(details);
+      console.log(details, "details");
       setUsername("")
       setPassword("")
 
@@ -29,13 +34,20 @@ function SignIn() {
   };
 
 
-  useEffect(()=>{
+  useEffect(() => {
     // after api calling
-    console.log("token")
+    const signin = async () => {
+      try {
+        const response = await axios.get(`http://localhost:8080/signin/${details.userName}/${details.password}`);
+        console.log(details.userName, details.password);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    signin();
+    // console.log("token")
     // if tocken already there route to homepae
-    
-  },[])
-
+  }, [details]);
   return (
     <div>
       <Container

@@ -13,7 +13,9 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import MapsUgcIcon from "@mui/icons-material/MapsUgc";
 import SendIcon from "@mui/icons-material/Send";
 import image6 from "../assets/udit.jpeg";
+import axios from 'axios'
 import { useEffect, useState } from "react";
+
 
 const memberList = [
   {
@@ -60,7 +62,18 @@ const Newsfeed = () => {
 
   useEffect(() => {
     // after api calling
-    setData("api");
+    const Newsfeed = async () => {
+      try {
+        const response = await axios.get('http://localhost:8080/newsfeed/madhav')
+        console.log(response)
+      } catch (error) {
+        console.log(error)
+
+      }
+
+
+    }
+    Newsfeed();
     console.log("data");
     // using map method to render stories
   }, []);
